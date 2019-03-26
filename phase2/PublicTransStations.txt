@@ -1,0 +1,4 @@
+Subway: Station1->Station2->Station3->Station4->Station5->Station6->Station7->Station8->Station9->Station10->Station11->Station12->Station13->Station14
+Bus: Bus1->Bus2->Station1->Bus3->Bus4
+Bus: Bus6->Bus7->Station5
+Bus: Station8->Bus8->Bus9

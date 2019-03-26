@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminStage">
+    <children>
+        <TextArea fx:id="announce" layoutX="67.0" layoutY="48.0" prefHeight="275.0" prefWidth="461.0" />
+        <Button layoutX="442.0" layoutY="347.0" mnemonicParsing="false" text="Set Announcement" />
+    </children>
+</AnchorPane>

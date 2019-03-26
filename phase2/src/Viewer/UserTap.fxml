@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserStage">
+    <children>
+        <MenuBar AnchorPane.bottomAnchor="371.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Return" />
+                        <MenuItem mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane dividerPositions="0.15675675675675677" layoutX="108.0" layoutY="41.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <ImageView fitHeight="54.0" layoutX="14.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <image>
+                                <Image url="@../Background/Background.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <SplitPane dividerPositions="0.7189542483660131" layoutX="108.0" layoutY="42.0" orientation="VERTICAL" prefHeight="308.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <ImageView fitHeight="262.0" fitWidth="630.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Background/Subway2.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Button fx:id="tapInButton" layoutX="174.0" layoutY="81.0" mnemonicParsing="false" onAction="#tapAction" prefHeight="54.0" prefWidth="263.0" text="TAP IN">
+                                            <font>
+                                                <Font size="22.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="tapOutButton" layoutX="174.0" layoutY="148.0" mnemonicParsing="false" onAction="#tapAction" prefHeight="54.0" prefWidth="263.0" text="TAP OUT">
+                                            <font>
+                                                <Font size="22.0" />
+                                            </font>
+                                        </Button>
+                                        <TextArea fx:id="cards" layoutX="14.0" layoutY="81.0" prefHeight="124.0" prefWidth="133.0" />
+                                        <Button fx:id="show" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#showCards" prefHeight="54.0" prefWidth="150.0" text="Show Cards" textAlignment="RIGHT">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Button>
+                                        <Label layoutX="197.0" layoutY="20.0" prefHeight="42.0" prefWidth="99.0" text="Choose Cards: " textFill="#3dd130" />
+                                        <TextField fx:id="whichCard" layoutX="298.0" layoutY="28.0" prefHeight="27.0" prefWidth="133.0" />
+                                        <Button layoutX="458.0" layoutY="28.0" mnemonicParsing="false" onAction="#chooseCard" text="Choose" />
+                                        <Button fx:id="demoButton" layoutX="461.0" layoutY="81.0" mnemonicParsing="false" onAction="#tapAction" prefHeight="54.0" prefWidth="99.0" text="Demo">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Button>
+                                        <Button layoutX="461.0" layoutY="148.0" mnemonicParsing="false" onAction="#logOut" prefHeight="54.0" prefWidth="99.0" text="Log Out">
+                                            <font>
+                                                <Font name="System Italic" size="17.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <ImageView fitHeight="114.0" fitWidth="689.0" layoutX="-39.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-32.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-54.0" AnchorPane.topAnchor="0.0">
+                                            <image>
+                                                <Image url="@../Background/Blue.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Button layoutX="353.0" layoutY="11.0" mnemonicParsing="false" onAction="#showAnnouncement" prefHeight="60.0" prefWidth="150.0" text="Announcement">
+                                            <font>
+                                                <Font size="17.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="account" layoutX="119.0" layoutY="11.0" mnemonicParsing="false" onAction="#accountInfo" prefHeight="60.0" prefWidth="133.0" text="Account">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

@@ -1,3 +1,0 @@
-Subway: Bloor-Yonge->Wellesley->College->Dundas->Queen->King->Union,Jerry
-
-Bus: Ossington -> Christie -> Bathurst -> Spadina -> St.George -> Bay

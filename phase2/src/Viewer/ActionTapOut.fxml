@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="420.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserStage">
+    <children>
+        <Button fx:id="tapButton" layoutX="288.0" layoutY="97.0" mnemonicParsing="false" onAction="#getInOutDemo" text="Get out" />
+        <Label layoutX="27.0" layoutY="14.0" prefHeight="44.0" prefWidth="215.0" text="Enter starting station/stop: ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="startingStation" layoutX="205.0" layoutY="62.0" />
+        <TextField fx:id="stopType" layoutX="57.0" layoutY="62.0" prefHeight="27.0" prefWidth="62.0" />
+        <Label layoutX="14.0" layoutY="67.0" text="Type:" />
+        <Label layoutX="146.0" layoutY="67.0" text="Name:" />
+        <TextArea fx:id="map" layoutX="14.0" layoutY="169.0" prefHeight="204.0" prefWidth="372.0" />
+        <Label layoutX="183.0" layoutY="140.0" text="Map">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Button layoutX="311.0" layoutY="385.0" mnemonicParsing="false" onAction="#setMap" text="Show Map" />
+    </children>
+</AnchorPane>

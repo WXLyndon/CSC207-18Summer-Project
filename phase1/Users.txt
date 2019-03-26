@@ -1,2 +1,0 @@
-AdminUser,Jerry,xynawang@gmail.com
-User,sheldon,xqysheldon@shabi.com

@@ -1,0 +1,15 @@
+AdminUser xynawang@gmail.com Jerry_Wang
+User xqysheldon@shabi.com Sheldon
+Sheldon:Apply for a new travel card
+0:enter Bloor-Yonge by Sheldon
+0:charge 10.0 to card by Sheldon
+0:out Union by Sheldon
+Sheldon:view recent trips
+0:deactivate by Sheldon
+0:enter Bloor-Yonge by Sheldon
+0:out Union by Sheldon
+Jerry_Wang:check income and cost difference
+Sheldon:check income and cost difference
+Sheldon:end the public trans for today
+Sheldon:look at the balance for card 0
+Jerry_Wang:end the public trans for today.

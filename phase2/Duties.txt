@@ -1,0 +1,15 @@
+Jie Wang 1002287651: Design and write basic structure. Add Observable and dependency injection design pattern. Add one
+major feature (Shortest distant between tow point of overlapping transit system, achieved by bfs). Add demo method which
+demos the case that transfer does not happen because the first trip is over 2 hours.
+
+Qizheng Wang 1002079877:
+wrote TravelCard including start new trip and end trip(the transfer problem and $6 cap).
+wrote log.txt related method in AdminInfo
+wrote all GUI(Controllers and Viewers) expect UserStage.showPieChart and AdminStage.showBarChart
+
+Xuanlin Wang 1002172463:
+Implement Singleton design pattern to TransInfo class to store all the needed info like AdminInfo and UserList instances,
+and make it implements Serializable to store it, and reload it when the program restarts.
+Add another major statistical features to show pie chart and show bar chart related to the AdminUsers' monthly report(
+all stations reached and revenue each day) and Cardholders' report(3O Recent Recent Trips' Types).
+Fix all style warnings and typos and rearrange the design and format..

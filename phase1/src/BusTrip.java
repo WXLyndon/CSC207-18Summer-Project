@@ -10,4 +10,6 @@ public class BusTrip extends Trip{
         System.out.println("2 dollars had been added to revenue");
         return 2.0;
     }
+
+
 }

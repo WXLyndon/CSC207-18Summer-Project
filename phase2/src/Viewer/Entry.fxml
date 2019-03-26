@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserStage">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="108.0" layoutY="41.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <ImageView fitHeight="72.0" fitWidth="626.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Background/Background.png" />
+               </image>
+            </ImageView>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.7189542483660131" layoutX="108.0" layoutY="42.0" orientation="VERTICAL" prefHeight="308.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fitHeight="415.0" fitWidth="643.0" layoutX="1.0" layoutY="-44.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1.0">
+                                 <image>
+                                    <Image url="@../Background/Subway.jpeg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="createNewAccount" layoutX="167.0" layoutY="77.0" mnemonicParsing="false" onAction="#logIn" prefHeight="54.0" prefWidth="263.0" text="Create new Account">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="167.0" layoutY="163.0" mnemonicParsing="false" onAction="#logIn" prefHeight="54.0" prefWidth="263.0" text="Login existing Account">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fitHeight="114.0" fitWidth="689.0" layoutX="-39.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-32.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="-54.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../Background/Blue.png" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="335.0" layoutY="11.0" mnemonicParsing="false" onAction="#showAnnouncement" prefHeight="60.0" prefWidth="150.0" text="Announcement">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="115.0" layoutY="11.0" mnemonicParsing="false" onAction="#warning" prefHeight="60.0" prefWidth="133.0" text="Account">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+   </children>
+</AnchorPane>

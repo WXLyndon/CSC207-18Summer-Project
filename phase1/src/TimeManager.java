@@ -2,7 +2,6 @@ import java.util.Date;
 
 public class TimeManager {
     Date systemStartDate;
-    Date systemEndDate;
 
     TimeManager(){
         this.systemStartDate = new Date();
@@ -17,4 +16,7 @@ public class TimeManager {
         return (timeNow.getTime() - trip.startTime.getTime()) > timeDifference;
     }
 
+    boolean hasOperated24(){
+        return (System.currentTimeMillis()-systemStartDate.getTime()>10000L);
+    }
 }
